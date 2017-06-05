@@ -112,8 +112,8 @@ public class MainActivity extends Activity {
         mCardScroller = new CardScrollView(this);
 
         mSimpleCardScrollAdapter = new SimpleCardScrollAdapter();
-        mSimpleCardScrollAdapter.getCardBuilders().add(getCardBuilder("请使用语音\"ok glass\">\"preview\"" +
-                "->\"record\"记录GPS定位信息。"));
+//        mSimpleCardScrollAdapter.getCardBuilders().add(getCardBuilder("请使用语音\"ok glass\">\"preview\"->\"record\"记录GPS定位信息。"));
+        mSimpleCardScrollAdapter.getCardBuilders().add(getCardBuilder("请使用轻触屏幕->\"preview\"->\"record\"记录GPS定位信息。"));
         mCardScroller.setAdapter(mSimpleCardScrollAdapter);
         mCardScroller.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
